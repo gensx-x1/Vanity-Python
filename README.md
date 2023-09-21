@@ -26,3 +26,6 @@ python3 Vanity-Python -p PREFIX -s SUFFIX -m MULTIPLE
 ```
 ### Screenshots:
 ![1](screenshot.png)
+
+## Donations are very welcome:
+0xFc25a6c12b7C9404c3d66741789e29ccf897182d
