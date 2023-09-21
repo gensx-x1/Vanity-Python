@@ -7,8 +7,6 @@ import secrets
 made by: gensx-x1
 https://github.com/gensx-x1
 '''
-
-
 # Generate new wallet, return Account object with address and private key.
 def generatePair():
     priv = secrets.token_hex(32)
@@ -55,7 +53,7 @@ def lookForAddress(_prefix, _suffix, _multiple):
             print(f'Generated {loop} addresses\n'
                   f'{account.address}\n'
                   f'{account.key.hex()}')
-            with open('wallets', 'a') as fp:
+            with open('Vanity-Python/wallets', 'a') as fp:
                 fp.write(f'{account.address},{account.key.hex()}\n')
                 fp.close()
             if not _multiple:
@@ -88,3 +86,6 @@ if __name__ == "__main__":
             exit(1)
 
     lookForAddress(args.prefix, args.suffix, args.multiple)
+
+
+
