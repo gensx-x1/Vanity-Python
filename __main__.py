@@ -3,6 +3,12 @@ from web3 import Web3, HTTPProvider
 from eth_account import Account
 import secrets
 
+'''
+made by: gensx-x1
+https://github.com/gensx-x1
+'''
+
+
 # Generate new wallet, return Account object with address and private key.
 def generatePair():
     priv = secrets.token_hex(32)
@@ -46,7 +52,8 @@ def lookForAddress(_prefix, _suffix, _multiple):
         addressPrefix = account.address[2:2 + len(_prefix)]
         addressSuffix = account.address[42-len(_suffix):]
         if addressPrefix == _prefix and addressSuffix == _suffix:
-            print(f'{account.address}\n'
+            print(f'Generated {loop} addresses\n'
+                  f'{account.address}\n'
                   f'{account.key.hex()}')
             with open('wallets', 'a') as fp:
                 fp.write(f'{account.address},{account.key.hex()}\n')
@@ -81,6 +88,3 @@ if __name__ == "__main__":
             exit(1)
 
     lookForAddress(args.prefix, args.suffix, args.multiple)
-
-
-
