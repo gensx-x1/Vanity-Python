@@ -15,17 +15,11 @@ web3
 ### Usage:
 ```
 git clone https://github.com/gensx-x1/Vanity-Python.git
-python3 Vanity-Python -p PREFIX -s SUFFIX -m MULTIPLE
+python3 Vanity-Python
 ```
 
-### Commandline arguments:
-```
--p --prefix Prefix you want to start your addres with.
--s --suffix Suffix you want to end your address with.
--m --multiple Bool , it True it won't stop at first address.(default False)
-```
 ### Screenshots:
 ![1](screenshot.png)
 
 ## Donations are very welcome:
-0xFc25a6c12b7C9404c3d66741789e29ccf897182d
+0x4673bB013Fb9d0d2585003b94B837b25F6dFd57d
