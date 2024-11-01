@@ -19,7 +19,7 @@ python3 Vanity-Python
 ```
 
 ### Screenshots:
-![1](screenshot.png)
+
 
 ## Donations are very welcome:
 0x4673bB013Fb9d0d2585003b94B837b25F6dFd57d
